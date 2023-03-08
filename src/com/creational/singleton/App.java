@@ -16,5 +16,6 @@ public class App {
                 }
             });
         }
+        executorService.shutdown();
     }
 }
