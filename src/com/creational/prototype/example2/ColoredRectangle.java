@@ -1,4 +1,4 @@
-package com.creational.prototype;
+package com.creational.prototype.example2;
 
 public class ColoredRectangle extends Rectangle implements Prototype{
     String color;
