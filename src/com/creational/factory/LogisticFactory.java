@@ -4,7 +4,6 @@ import com.creational.factory.logistics.AirLogistic;
 import com.creational.factory.logistics.Logistic;
 import com.creational.factory.logistics.RoadLogistic;
 import com.creational.factory.logistics.SeaLogistic;
-import com.sun.istack.internal.NotNull;
 
 import java.util.Objects;
 //non threadsafe singleton factory.
@@ -17,7 +16,7 @@ public class LogisticFactory {
         return instance;
     }
 
-    public Logistic getLogistics(@NotNull LogisticType logisticType){
+    public Logistic getLogistics(LogisticType logisticType){
         switch(logisticType){
             case AIR:
                 return new AirLogistic();
